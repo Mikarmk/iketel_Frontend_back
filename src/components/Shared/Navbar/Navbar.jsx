@@ -1,7 +1,14 @@
 import s from './Navbar.module.css';
 import burger_icon from './icons/burger.svg'
+import cross_icon from './icons/cross.svg'
+
+import { MenuContext } from '../../../ContextProviderMenu';
+import { useContext } from'react';
 
 function Navbar() {
+
+    const {IsMenuActive, SetMenuActive} = useContext(MenuContext);
+
     return (
     <header>
         <div className={s.header_content}>
@@ -14,9 +21,7 @@ function Navbar() {
             </div>
 
             <div className={s.right_part_mobile}>
-                <a href="">
-                    <img src={burger_icon} alt="" />
-                </a>
+                <img onClick={() => {SetMenuActive(!IsMenuActive)}} src={IsMenuActive ? cross_icon : burger_icon} alt="" />
             </div>
 
         </div>
