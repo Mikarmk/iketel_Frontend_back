@@ -8,7 +8,7 @@
     font-family: Blazma;
     color: var(--fg_color);
 }
-ul{
+.MenuUl{
     display: flex;
     flex-direction: column;
     gap: 20px;

@@ -7,9 +7,9 @@ function Menu()
     console.log(s.menu);
     return (
     <div className={IsMenuActive ? String(s.active) + ' ' + String(s.menu) : String(s.disable) + ' ' + String(s.menu)}>
-        <ul>
-            <li>Мәдинә</li>
-            <li>Көйләүләр</li>
+        <ul className={s.MenuUl}>
+            <li className={s.MenuLi}>Мәдинә</li>
+            <li className={s.MenuLi}>Көйләүләр</li>
         </ul>
     </div>)
 }
