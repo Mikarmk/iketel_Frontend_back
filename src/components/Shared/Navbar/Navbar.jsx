@@ -4,7 +4,7 @@ import cross_icon from './icons/cross.svg'
 
 import { MenuContext } from '../../../ContextProviderMenu';
 import { useContext } from'react';
-
+import { NavLink } from 'react-router-dom';
 function Navbar() {
 
     const {IsMenuActive, SetMenuActive} = useContext(MenuContext);
@@ -15,8 +15,8 @@ function Navbar() {
             <div className={s.left_part}>ИкеТель</div>
             <div className={s.right_part}>
                 <ul>
-                    <li>Мәдинә</li>
-                    <li>Көйләүләр</li>
+                    <li><NavLink to="/">Мәдинә</NavLink></li>
+                    <li><NavLink to="/two">Настройки</NavLink></li>
                 </ul>
             </div>
 

@@ -14,3 +14,9 @@
   font-family: Blazma;
   src: url('./fonts/Blazma-Regular.otf');
 }
+
+
+a{
+  text-decoration: none;
+  color: var(--fg_color);
+}
