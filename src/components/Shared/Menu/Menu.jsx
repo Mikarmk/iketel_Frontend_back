@@ -12,7 +12,7 @@ function Menu()
         <ul className={s.MenuUl}>
 
             <li className={s.MenuLi}><NavLink to="/">Мәдинә</NavLink></li>
-            <li className={s.MenuLi}><NavLink to="/two">Көйләүләр</NavLink></li>
+            <li className={s.MenuLi}><NavLink to="/login">Көйләүләр</NavLink></li>
         </ul>
     </div>)
 }

@@ -8,7 +8,7 @@ import { NavLink } from 'react-router-dom';
 function Navbar() {
 
     const {IsMenuActive, SetMenuActive} = useContext(MenuContext);
-
+    
     return (
     <header>
         <div className={s.header_content}>
@@ -16,7 +16,7 @@ function Navbar() {
             <div className={s.right_part}>
                 <ul>
                     <li><NavLink to="/">Мәдинә</NavLink></li>
-                    <li><NavLink to="/two">Настройки</NavLink></li>
+                    <li><NavLink to="/login">Настройки</NavLink></li>
                 </ul>
             </div>
 
